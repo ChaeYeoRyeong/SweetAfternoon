@@ -16,7 +16,8 @@
 
 
 ## **2. 프로젝트 pdf** ##
-[SweetAfternoon.pdf](https://github.com/ChaeYeoRyeong/SweetAfternoon/files/10139460/SweetAfternoon.pdf)
+[SweetAfternoon.pdf](https://github.com/ChaeYeoRyeong/SweetAfternoon/files/10167324/SweetAfternoon.pdf)
+
 
 
 
