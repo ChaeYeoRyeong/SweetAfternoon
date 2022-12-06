@@ -1,0 +1,139 @@
+.findWrap {
+    background-color: rgb(229, 224, 177);
+    width: 100%;
+    height: 1700px;
+    overflow: hidden;
+    position: relative;
+}
+.find_frame {
+    width: 1200px;
+    height: 1700px;
+    margin: 0 auto;
+}
+.find_section {
+    width: 1200px;
+    height: 450px;
+    padding-top: 45px;
+    position: absolute;
+}
+.find_section01 {
+    top: 0;
+}
+.find_section02 {
+    top: 500px;
+}
+.find_section03 {
+    top: 1000px;
+}
+.find_section04 {
+    top: 1450px;
+}
+p.find_con {
+    margin-bottom: 60px;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: green;
+}
+
+.findWrap ul.find_taste {
+    width: 1200px;
+}
+.findWrap ul.find_taste:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.findWrap ul.find_taste li{
+    float: left;
+    width: 350px;
+    height: 280px;
+    margin-right: 87px;
+    position: relative;
+}
+
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+[type=radio] + label {
+    cursor: pointer;
+}
+[type=radio]:checked + label {
+    outline: 5px solid indigo;
+    border-radius: 50%;
+}
+.findWrap ul.find_taste div {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+.findWrap ul.find_taste .salty{
+    content: url(../../resources/img/taste1_1.png);
+}
+.findWrap ul.find_taste .fruit{
+    content: url(../../resources/img/taste1_2.png);
+}
+.findWrap ul.find_taste .fresh{
+    content: url(../../resources/img/taste2_1.png);
+}
+.findWrap ul.find_taste .smooth{
+    content: url(../../resources/img/taste2_2.png);
+}
+.findWrap ul.find_taste .soft{
+    content: url(../../resources/img/taste3_1.png);
+}
+.findWrap ul.find_taste .intensity{
+    content: url(../../resources/img/taste3_2.png);
+}
+.findWrap ul.find_taste li.last {
+    margin-right: 0;
+}
+.findWrap ul.find_taste dt {
+    margin-bottom: 20px;
+}
+.findWrap ul.find_taste dd{
+    font-size: 14px;
+}
+.find_frame ul li dl{
+    width: 100%;
+    text-align: center;
+}
+.findWrap ul.find_taste01 li>dl {
+    position: absolute;
+    left: 200px;
+    top: 500px;
+    opacity: 0;
+}
+.findWrap ul.find_taste02 li>dl {
+    position: absolute;
+    left: 200px;
+    top: 500px;
+}
+.findWrap ul.find_taste03 li>dl {
+    position: absolute;
+    left: 200px;
+    top: 500px;
+}
+.findWrap ul.find_taste04 li>dl {
+    position: absolute;
+    left: 415px;
+    top: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

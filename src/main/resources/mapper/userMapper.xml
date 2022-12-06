@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coffee.dao.UserDao">
+    <select id="count" resultType="int">
+        SELECT count(*) FROM user
+    </select>
+
+    <select id="selectUser" parameterType="string" resultType="UserDto">
+        SELECT user_id, user_pwd, user_name, user_email, user_birth, user_reg_date
+        FROM user
+        WHERE user_id = #{user_id}
+    </select>
+
+    <delete id="deleteUser" parameterType="string">
+        DELETE FROM user WHERE user_id = #{user_id} and user_pwd = #{user_pwd}
+    </delete>
+
+    <delete id="deleteAll">
+        DELETE FROM user
+    </delete>
+
+    <insert id="insertUser">
+        INSERT INTO user (user_id, user_pwd, user_name, user_email, user_birth)
+        VALUES (#{user_id}, #{user_pwd}, #{user_name}, #{user_email}, #{user_birth})
+    </insert>
+
+    <update id="updateUser" parameterType="UserDto">
+        UPDATE user
+        SET user_pwd = #{user_pwd}, user_name = #{user_name}, user_email = #{user_email}, user_birth=#{user_birth}
+        WHERE user_id = #{user_id}
+    </update>
+
+    <select id="idCheck" resultType="Integer" parameterType="String">
+        SELECT count(*)
+        FROM user
+        WHERE user_id = #{user_id}
+    </select>
+
+</mapper>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coffee.dao.RecommendCoffeeDao">
+    <select id="select" parameterType="map" resultType="RecommendCoffeeDto">
+        SELECT coffee, description, coffeeImg
+        FROM recommendcoffee
+        WHERE radio1 = #{radio1} and radio2 = #{radio2} and radio3 = #{radio3}
+    </select>
+</mapper>
